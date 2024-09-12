@@ -1,0 +1,147 @@
+.home{
+    position: absolute;
+    left: 0;
+    background: url('../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    top: 0;
+    z-index: -10;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.content{
+    width: 500px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.content h5{
+    font-family: Barlow ;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 1rem;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--main-color);
+}
+.content h1{
+    font-family: "Bellefair", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 172px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.content p{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.explore{
+    width: 274px;
+    height: 274px;
+    background-color: white;
+    border-radius: 274px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.4, 1);
+
+}
+.explore p{
+    position: absolute;
+    padding: 5.5rem 4rem;
+    font-family: Bellefair;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    cursor: pointer;
+
+}
+
+.explore:hover {
+    transform: scale(1.2) rotate(360deg);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+
+
+@media (min-width: 760px) and (max-width: 1000px){
+    .home{
+        background: url('../assets/home/background-home-tablet.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        padding-top: 10rem;
+    }
+    .content{
+        align-items: center;
+    }
+
+    .content h5{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .content h1{
+        line-height: 150px;
+    }
+    .content p{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .explore p{
+        padding: 6rem 4rem;
+    }
+}
+
+@media (max-width: 760px){
+    .home{
+        background: url('../assets/home/background-home-mobile.jpg');
+        background-size: 100% 100%;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    .content{
+        width: 100%;
+        align-items: center;
+    }
+    .content h5{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+    .content h1{
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .content p{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 1.5rem ;
+    }
+    .explore{
+        width: 200px;
+        height: 200px;
+    }
+    .explore p{
+        padding: 4.5rem 3rem;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 1.25px;
+    }
+}

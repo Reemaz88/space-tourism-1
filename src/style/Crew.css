@@ -1,0 +1,174 @@
+.crew{
+    position: absolute;
+    background: url('../assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.crew-info{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    padding: 1rem;
+    display: none;
+}
+.crew-info.active{
+    display: flex;
+}
+.crew-subinfo{
+    width: 60%;
+    margin-right: 8rem;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+.crew-subinfo .role{
+    padding: 0 1rem;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.crew-subinfo .name{
+    font-size: 54px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.crew-subinfo .bio{
+    width: 70%;
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+.crew-image img{
+    width: 250px;
+    height: auto;
+}
+
+.crew-option{
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+.crew-option input[type='radio']{
+    border: none;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+.crew-option input[type='radio']:checked{
+    opacity: 1;
+    background: #FFFFFF;
+}
+
+@media (min-width: 760px) and (max-width: 1000px){
+    .crew{
+        background: url('../assets/crew/background-crew-tablet.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .crew-image{
+        width: 100%;
+        margin: 1rem auto;
+        justify-content: center;
+    }
+    .crew-image img{
+        width: 90%;
+        margin: 0 1rem;
+    }
+    .crew-info.active{
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .crew-subinfo{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .crew-subinfo .role{
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .crew-subinfo .name{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+    }
+    .crew-subinfo .bio{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .crew-option{
+        width: 100%;
+        margin: auto 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px){
+    .crew{
+        background: url('../assets/crew/background-crew-mobile.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .crew-info.active{
+        width: 100%;
+        text-align: center;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .crew-image{
+        width: 80%;
+        margin: 1rem auto;
+        border-bottom: 1px solid #383B4B;
+    }
+    .crew-image img{
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .crew-subinfo{
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .crew-subinfo .role{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .crew-subinfo .name{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .crew-subinfo .bio{
+        width: 90%;
+        padding: 0 0.5rem;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .crew-option{
+        width: 100%;
+        margin: auto 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,97 @@
+.technology{
+    position: absolute;
+    background: url('../assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+}
+.tech-content{
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tech-options .option{
+    background: none;
+    width: 70px;
+    height: 70px;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 4rem;
+    color: white;
+}
+.tech-options .option.active{
+    background: white;
+    color: black;
+}
+.tech-info{
+    display: none;
+    margin: 0 0.5rem; 
+}
+.tech-info.active{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+.tech-info .tech-title{
+    margin-bottom: 1rem;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+.tech-info .tech-name{
+    margin-bottom: 1.5rem;
+    font-family: Bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+.tech-info .tech-desc{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+.tech-image{
+    margin-left: 2rem;
+    width: 60%;
+}
+.tech-image img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1000px){
+    .technology{
+        background: url('../assets/technology/background-technology-tablet.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .tech-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .tech-info.active{
+        margin: 1rem auto;
+        text-align: center;
+    }
+}
